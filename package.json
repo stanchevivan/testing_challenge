@@ -1,0 +1,29 @@
+{
+  "name": "test_task",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test:all": "cucumber-js features/ -f json:report/cucumber_report.json",
+    "test:sorting": "cucumber-js features/ -f json:report/cucumber_report.json --tags \"@UI and @sorting\"",
+    "test:ordering": "cucumber-js features/ -f json:report/cucumber_report.json --tags \"@UI and @ordering\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.0.1",
+    "@types/chromedriver": "^81.0.5",
+    "@types/selenium-webdriver": "^4.1.26",
+    "chai": "^5.1.1",
+    "cucumber-html-reporter": "^7.2.0"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "chromedriver": "^129.0.2",
+    "dotenv": "^16.4.5",
+    "geckodriver": "^4.5.0",
+    "mocha": "10.7.3",
+    "selenium-webdriver": "^4.25.0"
+  }
+}
